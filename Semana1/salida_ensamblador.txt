@@ -1,0 +1,21 @@
+===== CODIGO ENSAMBLADOR =====
+	.file	"suma.c"
+	.intel_syntax noprefix
+	.text
+	.globl	suma
+	.type	suma, @function
+suma:
+	push	rbp
+	mov	rbp, rsp
+	mov	DWORD PTR -20[rbp], edi
+	mov	DWORD PTR -24[rbp], esi
+	mov	edx, DWORD PTR -20[rbp]
+	mov	eax, DWORD PTR -24[rbp]
+	add	eax, edx
+	mov	DWORD PTR -4[rbp], eax
+	mov	eax, DWORD PTR -4[rbp]
+	pop	rbp
+	ret
+	.size	suma, .-suma
+	.ident	"GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+	.section	.note.GNU-stack,"",@progbits
