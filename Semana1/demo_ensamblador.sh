@@ -2,6 +2,7 @@
 #!/bin/bash
 
 # Crear el archivo en lenguaje C
+#:D
 cat > suma.c << 'EOF'
 int suma(int a, int b) {
     int r = a + b;
