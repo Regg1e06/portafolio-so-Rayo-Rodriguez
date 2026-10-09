@@ -1,4 +1,4 @@
-===== CODIGO ENSAMBLADOR =====
+===== CODIGO ENSAMBLADOR ===== SALIDA =====
 	.file	"suma.c"
 	.intel_syntax noprefix
 	.text
