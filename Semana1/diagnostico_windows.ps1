@@ -1,6 +1,6 @@
 
-# Sistemas Operativos - Semana 1#
-# Diagnostico de hardware en Windows
+# Sistemas Operativos - Semana 1
+# Diagnostico de hardware en Windows.
 
 
 
