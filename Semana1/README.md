@@ -24,8 +24,6 @@ Contiene los comandos utilizados en Windows y Linux
 
 ### 4. Ejercicio de ensamblador
 - Script: [demo_ensamblador.sh](demo_ensamblador.sh)
-- Código C: [suma.c](suma.c)
-- Ensamblador: [suma.s](suma.s)
 - Resultados: [salida_ensamblador.txt](salida_ensamblador.txt)
 
 Se utilizó GCC para generar código ensamblador a partir de una función escrita en C.
