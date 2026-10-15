@@ -1,0 +1,46 @@
+COMPROBACION REAL CON PYTHON EN WINDOWS
+Banderas calculadas por el programa, no leidas de la CPU.
+
+== Archivos de la demo ==
+t.txt : 41 C3 B1 6F 0A
+n.bin : 9C FF FF FF
+datos.bin : 2C 01 00 00 FE FF 41 C3 B1 6F 20 32 30 32 36 00
+
+== Reto de volcado hexadecimal ==
+uint32 little-endian, offset 0: 300
+int16 little-endian, offset 4: -2
+UTF-8: Año 2026 | caracteres: 8 | bytes: 9
+uint32 big-endian, offset 0: 738263040
+
+== Sumas y banderas simuladas ==
+8 bits: +127 + (+1) = -128 con signo / 128 sin signo; CF=0 OF=1 ZF=0 SF=1
+8 bits: +200 + (+100) = 44 con signo / 44 sin signo; CF=1 OF=0 ZF=0 SF=0
+8 bits: -50 + (-100) = 106 con signo / 106 sin signo; CF=1 OF=1 ZF=0 SF=0
+8 bits: -128 + (-128) = 0 con signo / 0 sin signo; CF=1 OF=1 ZF=1 SF=0
+16 bits: +127 + (+1) = 128 con signo / 128 sin signo; CF=0 OF=0 ZF=0 SF=0
+16 bits: +200 + (+100) = 300 con signo / 300 sin signo; CF=0 OF=0 ZF=0 SF=0
+16 bits: -50 + (-100) = -150 con signo / 65386 sin signo; CF=1 OF=0 ZF=0 SF=1
+16 bits: -128 + (-128) = -256 con signo / 65280 sin signo; CF=1 OF=0 ZF=0 SF=1
+En 8 bits, 200 no cabe CON signo: su patron 0xC8 se interpreta como -56.
+
+== Endianness y UTF-8 ==
+0xCAFEBABE little : BE BA FE CA
+0xCAFEBABE big : CA FE BA BE
+'¿Señal? 5 €' : 11 caracteres y 15 bytes
+'¿' : C2 BF
+'S' : 53
+'e' : 65
+'ñ' : C3 B1
+'a' : 61
+'l' : 6C
+'?' : 3F
+' ' : 20
+'5' : 35
+' ' : 20
+'€' : E2 82 AC
+
+== IEEE 754 precision simple ==
+0.1: 0x3DCCCCCD, guardado=0.10000000149011612, error(float32-float64)=1.4901161138336505e-09
+0.5: 0x3F000000, guardado=0.5, error(float32-float64)=0
+0.3: 0x3E99999A, guardado=0.30000001192092896, error(float32-float64)=1.1920928966180355e-08
+Doble precision: 0.1+0.2 = 0.30000000000000004

@@ -1,0 +1,44 @@
+﻿DEBER 2 - REPORTE DE MEMORIA - WINDOWS
+== 1. Equipo, sistema y fecha ==
+Equipo: DESKTOP-DRKOFCJ
+Fecha: 2026-10-15 10:13:24 -05:00
+SO: Microsoft Windows 11 Home | Version: 10.0.26200 | 64 bits
+PowerShell: 5.1.26100.9711
+== 2. Arquitectura y orden de bytes ==
+Arquitectura: x86_64
+Orden de bytes: little-endian
+== 3. Caches y conjuntos de L1d ==
+Fuente: GetLogicalProcessorInformationEx(RelationCache). Capacidad POR instancia.
+Se agrupan instancias de geometria identica; no se usa la suma para calcular S.
+L1d (datos): C=32768 bytes (32.00 KiB); A=8; L=64 bytes; instancias=6
+  S = C/(L*A) = 32768/(64*8) = 64 conjuntos por instancia.
+L1i (instrucciones): C=32768 bytes (32.00 KiB); A=8; L=64 bytes; instancias=6
+L2 (unificada): C=1048576 bytes (1,024.00 KiB); A=8; L=64 bytes; instancias=6
+L3 (unificada): C=16777216 bytes (16,384.00 KiB); A=16; L=64 bytes; instancias=1
+Consulta de clase: Get-CimInstance Win32_CacheMemory (InstalledSize en KiB)
+
+Purpose    Level InstalledSize Associativity
+-------    ----- ------------- -------------
+L1 - Cache     3           384             7
+L2 - Cache     4          6144             7
+L3 - Cache     5         16384             8
+
+
+
+Associativity en CIM es un codigo enumerado; no equivale directamente a numero de vias.
+
+L2CacheSize L3CacheSize
+----------- -----------
+       6144       16384
+
+
+
+== 4. RAM ==
+RAM total visible para el SO: 15.23 GiB (16357171200 bytes)
+RAM libre reportada por Windows: 1.77 GiB (1901916160 bytes)
+== 5. Archivo de paginacion ==
+Archivo 1: asignado=14848 MiB; uso actual=804 MiB; pico=828 MiB
+== 6. Discos ==
+Nombre: SAMSUNG MZVL8512HFLU-00BH1 | Tipo: SSD | Tamano: 476.94 GiB (512110190592 bytes)
+== Fin ==
+Lectura real del SO; no se incluyen numeros de serie, usuarios ni direcciones de red.

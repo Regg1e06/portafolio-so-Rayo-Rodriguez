@@ -1,0 +1,15 @@
+ESTADO: PENDIENTE DE EJECUCION REAL EN LINUX O WSL
+
+Este aviso NO es una salida de Linux y NO reemplaza las evidencias del deber.
+No se ejecutaron los scripts en Linux al preparar esta carpeta.
+
+Desde Semana2 ejecutar:
+    bash ejecutar_todo.sh
+
+El mismo comando guarda todas las salidas en esta carpeta:
+    memoria_<equipo>.txt
+    salida_clase_linux.txt
+    salida_todo_linux.txt
+
+Verificar que el estado final sea 0 y revisar avisos de datos no disponibles.
+Despues se puede borrar este aviso y subir los archivos reales a GitHub.

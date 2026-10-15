@@ -1,0 +1,24 @@
+﻿DEMO DE CLASE - WINDOWS
+Fecha: 2026-10-15 10:13:29 -05:00
+== Texto UTF-8 sin BOM y con CR LF ==
+
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   41 C3 B1 6F 0D 0A                                AÃ±o..          
+
+
+
+== Entero -100, 32 bits, little-endian ==
+
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   9C FF FF FF                                      ...            
+
+
+
+== 0xCAFEBABE en memoria ==
+Little-endian: BE BA FE CA
+Big-endian:    CA FE BA BE
+La interpretacion depende del ancho, signo y orden de bytes.

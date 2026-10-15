@@ -1,0 +1,11 @@
+﻿DEMO MATRIZ - MEDICION REAL EN WINDOWS
+Fecha: 2026-10-15 10:13:29 -05:00
+gcc.exe (Rev2, Built by MSYS2 project) 14.2.0
+Compilacion: gcc -std=c11 -Wall -Wextra -O0 matriz.c -o matriz.exe
+Tiempo informado por clock()/CLOCKS_PER_SEC; no confundir con Tmedio simulado.
+Una ejecucion por recorrido; tiempos sujetos a carga y hardware.
+filas     0.015000 s (suma = 68702699520)
+Matriz: 4096 x 4096; sizeof(int)=4; bytes=67108864
+columnas  0.146000 s (suma = 68702699520)
+Matriz: 4096 x 4096; sizeof(int)=4; bytes=67108864
+Suma esperada en ambos recorridos: 68702699520.

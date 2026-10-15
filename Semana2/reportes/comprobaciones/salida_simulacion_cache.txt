@@ -1,0 +1,15 @@
+SIMULACION CON LAS FUNCIONES DEL HTML DOCENTE
+No son mediciones fisicas del computador. Tc=1 ns, Tm=100 ns, LRU.
+
+A filas: accesos=4096; aciertos=3840; fallos=256; h=93.75%; Tmedio=7.25 ns
+B columnas C=1024: accesos=4096; aciertos=0; fallos=4096; h=0%; Tmedio=101 ns
+B columnas C=2048: accesos=4096; aciertos=0; fallos=4096; h=0%; Tmedio=101 ns
+B columnas C=4096: accesos=4096; aciertos=0; fallos=4096; h=0%; Tmedio=101 ns
+B columnas C=8192: accesos=4096; aciertos=0; fallos=4096; h=0%; Tmedio=101 ns
+B columnas C=16384: accesos=4096; aciertos=3840; fallos=256; h=93.75%; Tmedio=7.25 ns
+D directa: accesos=2048; aciertos=0; fallos=2048; h=0%; Tmedio=101 ns
+D 2 vias: accesos=2048; aciertos=1920; fallos=128; h=93.75%; Tmedio=7.25 ns
+C L=64: accesos=512; aciertos=0; fallos=512; h=0%; Tmedio=101 ns
+C L=128: accesos=512; aciertos=256; fallos=256; h=50%; Tmedio=51 ns
+E columnas: accesos=1048576; aciertos=0; fallos=1048576; h=0%; Tmedio=101 ns
+E filas: accesos=1048576; aciertos=983040; fallos=65536; h=93.75%; Tmedio=7.25 ns
