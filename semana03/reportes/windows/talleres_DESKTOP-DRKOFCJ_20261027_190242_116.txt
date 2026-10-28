@@ -1,0 +1,87 @@
+TALLERES WINDOWS | 2026-10-27T19:02:44.2319424-05:00 | DESKTOP-DRKOFCJ
+
+=== W1 · Procesos ===
+Total: 423
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                                                                                                   
+-------  ------    -----      -----     ------     --  -- -----------                                                                                                                                   
+   9909       0       72       3136                 4   0 System                                                                                                                                        
+
+NumberOfLogicalProcessors : 12
+
+
+
+
+
+=== W2 · Servicios ===
+En ejecución: 139
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  AMD Crash Defen... AMD Crash Defender Service            
+Running  AMD External Ev... AMD External Events Utility           
+Running  amdpmfservice      AMD PMF Service                       
+Running  AmdPpkgSvc         AMD Provisioning Packages Service     
+Running  Appinfo            Información de la aplicación          
+Running  AppXSvc            AppX Deployment Service (AppXSVC)     
+Running  AudioEndpointBu... Compilador de extremo de audio de W...
+Running  Audiosrv           Audio de Windows                      
+
+
+
+
+=== W3 · Memoria (KiB) y discos (bytes) ===
+
+
+TotalVisibleMemorySize : 15973800
+FreePhysicalMemory     : 1957888
+
+
+
+
+DeviceID         Size    FreeSpace
+--------         ----    ---------
+C:       510928089088 122748231680
+G:       429496729600 116610818048
+
+
+
+
+=== W4 · CIM/WMI ===
+
+Caption                   Version    LastBootUpTime       
+-------                   -------    --------------       
+Microsoft Windows 11 Home 10.0.26200 10/25/2026 9:34:15 AM
+
+
+
+
+=== W5 · CPU ociosa ===
+
+PercentIdleTime
+---------------
+             94
+
+
+
+
+=== B · Espera de red ===
+Programa: C:\Windows\System32\PING.EXE -n 3 127.0.0.1 | Código de salida: 0
+real=2.083247 s; CPU=0.031250 s; p=0.985
+n para U>=90% en el modelo: 153
+
+
+=== B · Cálculo ===
+Programa: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\USUARIO\Documents\Codex\2026-10-27\ten\outputs\SEMANA 3 SISOP\Para_GitHub\semana03\clases\carga_cpu.ps1" | Código de salida: 0
+real=3.154613 s; CPU=3.218750 s; p=-0.020
+p fuera del intervalo (0,1): revisar resolución, concurrencia y sobrecarga de medición.
+
+
+=== B · Lectura del disco ===
+Programa: C:\Windows\System32\cmd.exe /c dir C:\Windows\System32 /s | Código de salida: 0
+real=8.872499 s; CPU=4.453125 s; p=0.498
+n para U>=90% en el modelo: 4
+
+p es una estimación de tiempo fuera de CPU; incluye planificación y sobrecarga. No demuestra por sí solo espera física del disco.
+Las consultas de arranque, drivers e inicio rápido se guardan en informe_arranque.ps1.
+Prueba de programar/cancelar reinicio: PENDIENTE MANUAL. No se ejecuta en este archivo.

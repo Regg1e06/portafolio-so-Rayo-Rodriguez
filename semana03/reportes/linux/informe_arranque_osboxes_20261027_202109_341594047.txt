@@ -1,0 +1,64 @@
+Informe de arranque · osboxes · 2026-10-27 20:21
+Autores: Miguel Rayo, Italo Rodriguez | IA: ChatGPT/Codex para completar y depurar scripts.
+
+=== 1 · Sistema operativo, versión y núcleo ===
+Sistema: Ubuntu 25.04
+6.14.0-15-generic
+x86_64
+
+=== 2 · Último arranque y tiempo encendido ===
+2026-10-27 20:14:20
+up 6 minutes
+
+=== 3 · Desglose del arranque (systemd-analyze) ===
+Startup finished in 8.477s (kernel) + 17.506s (userspace) = 25.984s 
+graphical.target reached after 17.505s in userspace.
+
+=== 4 · Las 5 unidades que más tardaron en arrancar ===
+7.114s plymouth-quit-wait.service
+4.297s snapd.seeded.service
+3.992s snapd.service
+3.318s dev-loop2.device
+3.313s dev-loop6.device
+Cadena crítica (complementa blame):
+The time when unit became active or started is printed after the "@" character.
+The time the unit took to start is printed after the "+" character.
+
+graphical.target @17.505s
+└─power-profiles-daemon.service @17.440s +64ms
+  └─multi-user.target @17.436s
+    └─plymouth-quit-wait.service @10.317s +7.114s
+      └─systemd-user-sessions.service @10.128s +76ms
+        └─network.target @10.029s
+          └─NetworkManager.service @7.156s +2.871s
+            └─dbus.service @5.616s +1.505s
+              └─basic.target @5.582s
+                └─sockets.target @5.582s
+                  └─snapd.socket @5.575s +6ms
+                    └─sysinit.target @5.557s
+                      └─snapd.apparmor.service @3.791s +1.765s
+                        └─apparmor.service @2.331s +1.456s
+                          └─local-fs.target @2.324s
+                            └─run-snapd-ns-prompting\x2dclient.mnt.mount @13.448s
+                              └─run-snapd-ns.mount @12.074s
+                                └─local-fs-pre.target @1.091s
+                                  └─systemd-tmpfiles-setup-dev.service @1.014s +76ms
+                                    └─systemd-tmpfiles-setup-dev-early.service @905ms +89ms
+                                      └─kmod-static-nodes.service @644ms +120ms
+                                        └─systemd-journald.socket @607ms
+                                          └─system.slice @557ms
+                                            └─-.slice @557ms
+
+=== 5 · Módulos del núcleo cargados ===
+Total de módulos: 66
+Cinco más grandes por tamaño declarado (bytes):
+Module                  Size  Used by
+vmwgfx                466944  6
+hid                   266240  2 usbhid,hid_generic
+psmouse               221184  0
+snd_ac97_codec        196608  1 snd_ens1371
+snd_pcm               196608  2 snd_ac97_codec,snd_ens1371
+
+=== 6 · Target por defecto y servicios fallidos ===
+graphical.target
+Servicios fallidos: ninguno

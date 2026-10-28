@@ -1,0 +1,106 @@
+Informe de arranque · DESKTOP-DRKOFCJ · 2026-10-27 19:02
+Autores: Miguel Rayo, Italo Rodriguez | IA: ChatGPT/Codex para completar y depurar scripts.
+Administrador: False | Captura: 2026-10-27T19:02:42.1608759-05:00
+
+=== 1 · Sistema operativo, versión y compilación ===
+
+
+Caption        : Microsoft Windows 11 Home
+Version        : 10.0.26200
+BuildNumber    : 26200
+OSArchitecture : 64 bits
+
+
+
+
+
+=== 2 · Último arranque y tiempo encendido ===
+Último arranque: 2026-10-25 09:34:15
+Tiempo encendido: 2.09:28:27.6797543
+
+
+=== 3 · Desglose del arranque ===
+Firmware: 4744 ms (4.744 s)
+AVISO: evento 100 omitido: requiere PowerShell como administrador. Las otras secciones continúan.
+
+
+=== 4 · Servicios y demoras del arranque ===
+En ejecución: 139
+
+Name                        DisplayName                       StartMode
+----                        -----------                       ---------
+AMD Crash Defender Service  AMD Crash Defender Service        Auto     
+AMD External Events Utility AMD External Events Utility       Auto     
+amdpmfservice               AMD PMF Service                   Manual   
+AmdPpkgSvc                  AMD Provisioning Packages Service Auto     
+Appinfo                     Información de la aplicación      Manual   
+
+
+Automáticos detenidos (no implica por sí solo una avería):
+Total: 7
+
+Name                                     State   StartMode
+----                                     -----   ---------
+brave                                    Stopped Auto     
+edgeupdate                               Stopped Auto     
+GoogleUpdaterInternalService157.0.8089.0 Stopped Auto     
+GoogleUpdaterService157.0.8089.0         Stopped Auto     
+gupdate                                  Stopped Auto     
+
+
+
+
+=== 5 · Controladores (drivers) ===
+Total driverquery: 440
+
+Nombre módu.             Nombre para mostrar                           Tipo control. Fecha de vínculo    
+------------             -------------------                           ------------- ----------------    
+1394ohci                 Controladora de host compatible con OHCI 1394 Kernel                            
+3ware                    3ware                                         Kernel        5/18/2015 5:28:03 PM
+ACPI                     Controlador Microsoft ACPI                    Kernel                            
+AcpiAudioCompositorInbox ACPI Audio Compositor Driver                  Kernel                            
+AcpiDev                  Controlador de dispositivos ACPI              Kernel                            
+acpiex                   Microsoft ACPIEx Driver                       Kernel                            
+acpipagr                 Controlador de agregador de procesador ACPI   Kernel                            
+AcpiPmi                  Controlador de medidor de energía ACPI        Kernel                            
+
+
+Win32_SystemDriver en ejecución: 202
+
+Name     State   StartMode
+----     -----   ---------
+ACPI     Running Boot     
+acpiex   Running Boot     
+acpitime Running Manual   
+Acx01000 Running Manual   
+AFD      Running System   
+
+
+
+
+=== 6 · Inicio rápido ===
+HiberbootEnabled: 1 (1=configurado; 0=desactivado). Consultar powercfg /a para disponibilidad.
+Los siguientes estados de suspensión están disponibles en este sistema:
+    Modo de espera (Inactivo de baja energía S0) Red conectada
+    Hibernar
+    Inicio rápido
+
+Los siguientes estados de suspensión no están disponibles en este sistema:
+    Modo de espera (S1)
+	El firmware del sistema no admite este estado de espera.
+	Este estado de espera se deshabilita cuando se admite el modo inactivo de bajo consumo S0.
+
+    Modo de espera (S2)
+	El firmware del sistema no admite este estado de espera.
+	Este estado de espera se deshabilita cuando se admite el modo inactivo de bajo consumo S0.
+
+    Modo de espera (S3)
+	El firmware del sistema no admite este estado de espera.
+	Este estado de espera se deshabilita cuando se admite el modo inactivo de bajo consumo S0.
+	La configuración actual de Device Guard deshabilitó este estado de espera.
+
+    Suspensión híbrida
+	El modo de espera (S3) no está disponible.
+	El hipervisor no admite este estado de espera.
+
+
