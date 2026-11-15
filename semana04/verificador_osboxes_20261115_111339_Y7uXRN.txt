@@ -1,0 +1,106 @@
+Verificador de entorno · osboxes · 2026-11-15 11:13:39 -0500
+
+=== 1 · Sistema y shell ===
+Sistema: Ubuntu 25.04
+Núcleo: 6.14.0-37-generic
+Bash: 5.2.37(1)-release
+Usuario: osboxes
+
+=== 2 · Herramientas requeridas ===
+Comando    Estado   Ruta                     Versión
+git        FALTA    Fuera del PATH
+curl       FALTA    Fuera del PATH
+python3    OK       /usr/bin/python3         Python 3.13.3
+jq         OK       /usr/bin/jq              jq-1.7
+strace     OK       /usr/bin/strace          strace -- version 6.14
+tree       FALTA    Fuera del PATH
+
+=== 3 · Paquetes y orígenes ===
+Paquetes dpkg instalados: 1553
+Orígenes visibles en caché de APT:
+Package files:
+ 100 /var/lib/dpkg/status
+     release a=now
+ 500 http://security.ubuntu.com/ubuntu plucky-security/multiverse amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-security,n=plucky,l=Ubuntu,c=multiverse,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu plucky-security/universe amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-security,n=plucky,l=Ubuntu,c=universe,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu plucky-security/restricted amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-security,n=plucky,l=Ubuntu,c=restricted,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu plucky-security/main amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-security,n=plucky,l=Ubuntu,c=main,b=amd64
+     origin security.ubuntu.com
+ 100 http://archive.ubuntu.com/ubuntu plucky-backports/universe amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-backports,n=plucky,l=Ubuntu,c=universe,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky-updates/multiverse amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-updates,n=plucky,l=Ubuntu,c=multiverse,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-updates,n=plucky,l=Ubuntu,c=universe,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky-updates/restricted amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-updates,n=plucky,l=Ubuntu,c=restricted,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky-updates,n=plucky,l=Ubuntu,c=main,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky/multiverse amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky,n=plucky,l=Ubuntu,c=multiverse,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky/universe amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky,n=plucky,l=Ubuntu,c=universe,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky/restricted amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky,n=plucky,l=Ubuntu,c=restricted,b=amd64
+     origin archive.ubuntu.com
+ 500 http://archive.ubuntu.com/ubuntu plucky/main amd64 Packages
+     release v=25.04,o=Ubuntu,a=plucky,n=plucky,l=Ubuntu,c=main,b=amd64
+     origin archive.ubuntu.com
+
+Propietarios de los ejecutables detectados:
+python3 → python3-minimal
+  python3-minimal:
+    Installed: 3.13.3-1
+    Candidate: 3.13.3-1
+    Version table:
+   *** 3.13.3-1 500
+          500 http://archive.ubuntu.com/ubuntu plucky/main amd64 Packages
+          100 /var/lib/dpkg/status
+jq → jq
+  jq:
+    Installed: 1.7.1-3ubuntu1.1
+    Candidate: 1.7.1-3ubuntu1.1
+    Version table:
+   *** 1.7.1-3ubuntu1.1 500
+          500 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 Packages
+          500 http://security.ubuntu.com/ubuntu plucky-security/main amd64 Packages
+          100 /var/lib/dpkg/status
+       1.7.1-3ubuntu1 500
+          500 http://archive.ubuntu.com/ubuntu plucky/main amd64 Packages
+strace → strace
+  strace:
+    Installed: 6.14-0ubuntu1
+    Candidate: 6.14-0ubuntu1
+    Version table:
+   *** 6.14-0ubuntu1 500
+          500 http://archive.ubuntu.com/ubuntu plucky/main amd64 Packages
+          100 /var/lib/dpkg/status
+
+=== 4 · Últimas 5 instalaciones de paquetes ===
+2026-11-13 19:55:53 install libsctp1:amd64 <none> 1.0.21+dfsg-1
+2026-11-13 19:55:53 install libiperf0:amd64 <none> 3.18-2
+2026-11-13 19:55:53 install iperf3:amd64 <none> 3.18-2
+2026-11-13 19:47:49 install linux-tools-6.14.0-37:amd64 <none> 6.14.0-37.37
+2026-11-13 19:47:49 install linux-tools-6.14.0-37-generic:amd64 <none> 6.14.0-37.37
+
+=== 5 · Qué falta y cómo instalarlo ===
+Herramientas faltantes: git curl tree
+sudo apt install -y git curl tree
+
+=== 6 · Resultado ===
+Herramientas listas: 3 de 6
+Código de salida: 1

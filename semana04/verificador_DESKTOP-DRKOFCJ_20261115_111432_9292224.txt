@@ -1,0 +1,47 @@
+﻿Verificador de entorno · DESKTOP-DRKOFCJ · 2026-11-15 11:14:33 -05:00
+
+=== 1 · Sistema y shell ===
+Sistema: Microsoft Windows 11 Home (compilación 26200)
+PowerShell: 5.1.26100.9818 (Desktop)
+Usuario: USUARIO
+
+=== 2 · Herramientas requeridas ===
+
+Comando  Estado Ruta                                                                                                            Version                                                                
+-------  ------ ----                                                                                                            -------                                                                
+git      OK     C:\Program Files\Git\cmd\git.exe                                                                                git version 2.54.0.windows.1                                           
+curl.exe OK     C:\Windows\system32\curl.exe                                                                                    curl 8.22.0 (Windows) libcurl/8.22.0 Schannel zlib/1.3.2 WinIDN WinLDAP
+python   OK     C:\msys64\ucrt64\bin\python.exe                                                                                 Python 3.12.7                                                          
+jq       OK     C:\Users\USUARIO\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe\jq.exe jq-1.8.2                                                               
+winget   OK     C:\Users\USUARIO\AppData\Local\Microsoft\WindowsApps\winget.exe                                                 v1.29.380                                                              
+
+
+
+
+=== 3 · Programas instalados y orígenes de WinGet ===
+Entradas del registro con nombre: 227
+Name        Argument                                      Explicit
+------------------------------------------------------------------
+msstore     https://storeedgefd.dsx.mp.microsoft.com/v9.0 false
+winget      https://cdn.winget.microsoft.com/cache        false
+winget-font https://cdn.winget.microsoft.com/fonts        true
+
+=== 4 · Últimas 5 instalaciones registradas ===
+
+InstallDate DisplayName                            DisplayVersion
+----------- -----------                            --------------
+20261115    jq                                     1.8.2         
+20261115    Copilot                                157.0.4341.60 
+20261115    Microsoft Edge                         157.0.4341.60 
+20261112    NVIDIA Controlador de audio HD 1.4.6.6 1.4.6.6       
+20261112    NVIDIA Container                       1.51          
+
+
+
+
+=== 5 · Qué falta y cómo instalarlo ===
+Todas las herramientas requeridas están disponibles.
+
+=== 6 · Resultado ===
+Herramientas listas: 5 de 5
+Código de salida: 0
