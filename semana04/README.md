@@ -45,6 +45,10 @@ El código **0** indica que todas las herramientas respondieron a la consulta de
 
 El verificador de Linux incluye DNF/RPM para AlmaLinux y APT/dpkg para Ubuntu. Se ejecutó en la VM Ubuntu. En Ubuntu, el informe muestra el propietario del binario y la política local de versiones y fuentes de APT. En Windows, la lista de instalaciones se limita a las entradas del registro que tienen fecha.
 
+## Ayuda memoria
+
+[Comandos de Linux y Windows](Comandos.md) para los talleres y el verificador.
+
 ## Talleres
 
 - [Hoja de resultados de los talleres 1 y 2](talleres/Talleres_1_y_2.pdf), con las mediciones de la pareja del 11 de noviembre.
