@@ -15,6 +15,7 @@ Este repo contiene las actividades y scripts desarrollados durante la asignatura
 | [Semana 1](Semana1/) | Comandos y reconocimiento de hardware | Diagnóstico con PowerShell y Bash; introducción al ensamblador |
 | [Semana 2](Semana2/) | Modelo de programación, memoria y representación de datos | Reporte de memoria en Windows y Linux, demos de datos y recorrido de matrices |
 | [Semana 3](semana03/) | Introducción al SO y arranque | Informes de arranque en Bash y PowerShell; procesos, servicios y controladores |
+| [Semana 4](semana04/) | Llamadas al sistema, tuberías y gestores de paquetes | Verificador de entorno en Bash y PowerShell con informes de Ubuntu y Windows, y talleres 1 y 2 |
 
 ## Herramientas utilizadas
 
@@ -24,6 +25,7 @@ Este repo contiene las actividades y scripts desarrollados durante la asignatura
 - VMware
 - Git y GitHub
 - Laboratorio de Memoria y Caché del curso
+- `strace`, `jq`, APT y WinGet
 
 ## Organización
 
@@ -31,9 +33,11 @@ Cada carpeta semanal contiene un `README.md` que explica su contenido y cómo ej
 
 La semana 1 conserva su organización original. En la [semana 2](Semana2/README.md), los reportes se separan en `reportes/windows/` y `reportes/linux/` para que no se sobrescriban si los dos sistemas usan el mismo nombre de equipo.
 
+En la [semana 4](semana04/README.md), los verificadores y sus informes TXT están en `semana04/`. La hoja de resultados y los ejercicios complementarios están en `semana04/talleres/`.
+
 ## Uso de IA generativa
 
-Para las semanas 2 y 3 se utilizó ChatGPT/Codex como apoyo para organizar la documentación, explicar los comandos, preparar y depurar los scripts, y comprobar los resultados. El estado de ejecución de cada plataforma se indica en el README de esa semana.
+Para las semanas 2, 3 y 4 se utilizó ChatGPT/Codex como apoyo para organizar la documentación, explicar los comandos, preparar y depurar los scripts, y comprobar los resultados. El estado de ejecución de cada plataforma se indica en el README de esa semana.
 
 En la [semana 3](semana03/README.md) se usa `semana03/`, como pide la guía, y se separan las salidas en `reportes/windows/` y `reportes/linux/`.
 
