@@ -1,0 +1,37 @@
+Auditoría de seguridad | Linux | 2026-11-16T11:47:55-05:00
+
+[1] llavero
+UID 0: root
+Grupo: wheel:x:10:fieecec
+→ Sección 1: OK
+
+[2] puertas
+Sockets TCP en escucha: 5
+  127.0.0.1:631
+  0.0.0.0:22
+  [::1]:631
+  [::]:22
+  *:9090
+Escuchas de riesgo fuera de loopback: ninguna
+→ Sección 2: OK
+
+[3] portero
+firewalld: active
+→ Sección 3: OK
+
+[4] fallos
+Fuente: muestra muestra_sesion3_auth.log
+Umbral: 3
+Fallos por IP:
+      4 45.83.1.20
+      4 91.200.5.4
+      3 10.0.0.7
+Alerta para 45.83.1.20
+Alerta para 91.200.5.4
+Alerta para 10.0.0.7
+→ Sección 4: ALERTA
+
+[5] Veredicto
+1=OK 2=OK 3=OK 4=ALERTA
+Resultado: ALERTA
+Código de salida: 1

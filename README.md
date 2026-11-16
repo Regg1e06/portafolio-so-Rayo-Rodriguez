@@ -16,6 +16,7 @@ Este repo contiene las actividades y scripts desarrollados durante la asignatura
 | [Semana 2](Semana2/) | Modelo de programación, memoria y representación de datos | Reporte de memoria en Windows y Linux, demos de datos y recorrido de matrices |
 | [Semana 3](semana03/) | Introducción al SO y arranque | Informes de arranque en Bash y PowerShell; procesos, servicios y controladores |
 | [Semana 4](semana04/) | Llamadas al sistema, tuberías y gestores de paquetes | Verificador de entorno en Bash y PowerShell con informes de Ubuntu y Windows, y talleres 1 y 2 |
+| [Semana 5](semana05/) | Identidad, cortafuegos y auditoría | Auditoría en Bash y PowerShell, ayuda memoria y salidas TXT |
 
 ## Herramientas utilizadas
 
@@ -37,7 +38,7 @@ En la [semana 4](semana04/README.md), los verificadores y sus informes TXT está
 
 ## Uso de IA generativa
 
-Para las semanas 2, 3 y 4 se utilizó ChatGPT/Codex como apoyo para organizar la documentación, explicar los comandos, preparar y depurar los scripts, y comprobar los resultados. El estado de ejecución de cada plataforma se indica en el README de esa semana.
+Para las semanas 2 a 5 se utilizó ChatGPT/Codex como apoyo para organizar la documentación, explicar los comandos, preparar y depurar los scripts, y comprobar los resultados. El estado de ejecución de cada plataforma se indica en el README de esa semana.
 
 En la [semana 3](semana03/README.md) se usa `semana03/`, como pide la guía, y se separan las salidas en `reportes/windows/` y `reportes/linux/`.
 

@@ -1,0 +1,64 @@
+﻿Auditoría de seguridad | Windows | 2026-11-16T11:49:24.0989437-05:00
+
+[1] Llavero
+Administradores: Administrador, USUARIO
+Cuenta integrada habilitada: False
+→ Sección 1: OK
+
+[2] Puertas
+Sockets TCP en escucha: 33
+  [::]:135
+  [0.0.0.0]:135
+  [172.29.32.83]:139
+  [192.168.127.1]:139
+  [192.168.220.1]:139
+  [::]:445
+  [127.0.0.1]:902
+  [127.0.0.1]:912
+  [0.0.0.0]:1309
+  [127.0.0.1]:2680
+  [0.0.0.0]:5040
+  [::1]:7679
+  [127.0.0.1]:13508
+  [::]:15100
+  [::]:15101
+  [127.0.0.1]:27182
+  [0.0.0.0]:28252
+  [::1]:42050
+  [::]:49664
+  [0.0.0.0]:49664
+  [::]:49665
+  [0.0.0.0]:49665
+  [::]:49666
+  [0.0.0.0]:49666
+  [::]:49667
+  [0.0.0.0]:49667
+  [::]:49668
+  [0.0.0.0]:49668
+  [::]:49669
+  [0.0.0.0]:49669
+  [127.0.0.1]:50521
+  [127.0.0.1]:54206
+  [0.0.0.0]:57305
+Escuchas de riesgo fuera de loopback: ninguna
+→ Sección 2: OK
+
+[3] Portero
+Domain: habilitado=True
+Private: habilitado=True
+Public: habilitado=True
+→ Sección 3: OK
+
+[4] Fallos
+Fuente: muestra muestra_sesion3_4625.csv
+Umbral: 5
+Fallos por IP:
+  4 45.83.1.20
+  4 91.200.5.4
+  3 10.0.0.7
+→ Sección 4: OK
+
+[5] Veredicto
+1=OK 2=OK 3=OK 4=OK
+Resultado: OK
+Código de salida: 0

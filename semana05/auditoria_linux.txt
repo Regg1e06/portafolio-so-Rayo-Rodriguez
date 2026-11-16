@@ -1,0 +1,32 @@
+Auditoría de seguridad | Linux | 2026-11-16T11:47:55-05:00
+
+[1] llavero
+UID 0: root
+Grupo: wheel:x:10:fieecec
+→ Sección 1: OK
+
+[2] puertas
+Sockets TCP en escucha: 5
+  127.0.0.1:631
+  0.0.0.0:22
+  [::1]:631
+  [::]:22
+  *:9090
+Escuchas de riesgo fuera de loopback: ninguna
+→ Sección 2: OK
+
+[3] portero
+firewalld: active
+→ Sección 3: OK
+
+[4] fallos
+Fuente: journal de sshd de las últimas 24 h
+Umbral: 5
+Fallos por IP:
+      4 127.0.0.1
+→ Sección 4: OK
+
+[5] Veredicto
+1=OK 2=OK 3=OK 4=OK
+Resultado: OK
+Código de salida: 0

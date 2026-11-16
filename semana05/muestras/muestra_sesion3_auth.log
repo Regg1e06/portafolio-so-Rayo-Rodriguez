@@ -1,0 +1,11 @@
+Nov 13 10:00:00 clase sshd-session[2000]: Failed password for root from 91.200.5.4 port 50000 ssh2
+Nov 13 10:00:05 clase sshd-session[2001]: Failed password for ana from 10.0.0.7 port 50001 ssh2
+Nov 13 10:00:10 clase sshd-session[2002]: Failed password for admin from 45.83.1.20 port 50002 ssh2
+Nov 13 10:00:12 clase sshd-session[2003]: Failed password for root from 45.83.1.20 port 50003 ssh2
+Nov 13 10:00:14 clase sshd-session[2004]: Failed password for test from 45.83.1.20 port 50004 ssh2
+Nov 13 10:00:16 clase sshd-session[2005]: Failed password for oracle from 45.83.1.20 port 50005 ssh2
+Nov 13 10:00:40 clase sshd-session[2006]: Failed password for ana from 10.0.0.7 port 50006 ssh2
+Nov 13 10:01:30 clase sshd-session[2007]: Failed password for ana from 10.0.0.7 port 50007 ssh2
+Nov 13 10:03:00 clase sshd-session[2008]: Failed password for root from 91.200.5.4 port 50008 ssh2
+Nov 13 10:06:00 clase sshd-session[2009]: Failed password for root from 91.200.5.4 port 50009 ssh2
+Nov 13 10:09:00 clase sshd-session[2010]: Failed password for root from 91.200.5.4 port 50010 ssh2
